@@ -63,8 +63,8 @@ class Square():
         Function to return the string representation of the square
         """
 
-        for _ in range(self.__height):
-            print("*" * self.__width)
+        # for _ in range(self.__height):
+        # print("*" * self.__width)
 
         return "{}/{}".format(self.__width, self.__height)
 

@@ -20,10 +20,14 @@ class Square():
 
     @property
     def height(self):
+        """ Property to return height"""
+
         return self.__height
 
     @property
     def width(self):
+        """ Property to return width """
+
         return self.__width
 
     @height.setter

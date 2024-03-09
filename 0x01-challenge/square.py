@@ -66,7 +66,7 @@ class Square():
         for _ in range(self.__height):
             print("*" * self.__width)
 
-        return "widith: {} / height: {}".format(self.__width, self.__height)
+        return "{}/{}".format(self.__width, self.__height)
 
 
 if __name__ == "__main__":

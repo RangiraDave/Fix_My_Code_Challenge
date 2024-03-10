@@ -34,7 +34,7 @@ class Square():
     def height(self, value):
         """Function to set the height"""
 
-        if not isinstance(value, int) or value < 0:
+        if type(value) is not int or value < 0:
             raise ValueError("height must be a positive integer")
 
         self.__height = value
@@ -43,7 +43,7 @@ class Square():
     def width(self, value):
         """Function to set the width"""
 
-        if not isinstance(value, int) or value < 0:
+        if type(value) is int or value < 0:
             raise ValueError("width must be a positive integer")
 
         self.__width = value
@@ -62,6 +62,9 @@ class Square():
         """
         Function to return the string representation of the square
         """
+
+        if type(self.__width) is not int or type(self.__height) is not int:
+            raise ValueError("width and height must be a positive integer")
 
         for _ in range(self.__height):
             print("*" * self.__width)
